@@ -6,6 +6,14 @@
 'use strict';
 module.exports = function (grunt) {
 
+    grunt.initConfig({});
+
+    // Template Setup Task
+    grunt.registerTask('setup', [
+        //'replace:init',
+        'bower-install'
+    ]);
+
     // Run bower install
     grunt.registerTask('bower-install', function () {
         var done = this.async();

@@ -68,9 +68,9 @@ var cssTasks = function(filename) {
     .pipe(function() {
       return $.if(enabled.maps, $.sourcemaps.init());
     })
-      .pipe(function() {
-        return $.if('*.less', $.less());
-      })
+      //.pipe(function() {
+      //  return $.if('*.less', $.less());
+      //})
       .pipe(function() {
         return $.if('*.scss', $.sass({
           outputStyle: 'nested', // libsass doesn't support expanded yet
